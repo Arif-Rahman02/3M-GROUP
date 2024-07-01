@@ -6,24 +6,21 @@
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
 
     <div class="wrapper">
-        <a href="../Dashboard/Dashboard.html"><i class='bx bx-left-arrow-alt'></i></a>
+        <a href="../Main/main.html"><i class='bx bx-left-arrow-alt'></i></a>
         
-        <form action="">
+        <form action="check.php" method="post">
             <h1>Masuk</h1>
             <p>Masuk dengan akun yang sudah terdaftar</p>
-            <!-- <p>Username</p> -->
             <div class="input-box">
-                <input type="text" placeholder="username"required>
-                <i class='bx bxs-user' ></i>
+                <input name="username" id="username" type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
             </div>
-            <!-- <p>Kata Sandi</p> -->
             <div class="input-box">
-                <input type="password" placeholder="Kata Sandi"required>
+                <input name="password" id="password" type="password" placeholder="Kata Sandi" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
@@ -32,14 +29,13 @@
                 <a href="#">Lupa kata sandi?</a>
             </div>
 
-            <button type="submit" class="btn">
-                <a href="../Dashboard/Dashboard.html">Masuk</a></button>
+            <button type="submit" class="btn">Masuk</button>
 
-            <div class="register-link">
+            <!-- <div class="register-link">
                 <p>Belum memiliki akun?
                     <a href="../Registrasi/Registrasi.html">Daftar</a>
                 </p>
-            </div>
+            </div> -->
         </form>
     </div>
 </body>
