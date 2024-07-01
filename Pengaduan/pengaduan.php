@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Sidebar</title>
+    <title>Pengaduan</title>
     <link rel="stylesheet" href="pengaduan.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <?php
@@ -18,9 +18,9 @@
 <body>
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../Dashboard/Dashboard.html">Dashboard</a>
-        <a href="pengaduan.html">Pengaduan</a>
-        <a href="../Kritik/kritik.html">Kritik dan Saran</a>
+        <a href="../Dashboard/Dashboard.php">Dashboard</a>
+        <a href="pengaduan.php">Pengaduan</a>
+        <a href="../Kritik/kritik.php">Kritik dan Saran</a>
         <a href="../Main/main.php">Logout</a>
     </div>
 
@@ -32,6 +32,7 @@
 
     <h1>Layanan Pengaduan dan Aspirasi Mahasiswa</h1>
     <hr>
+    <h3>Pengaduan</h3>
 
     <div class="input-box">
         <input type="text" placeholder="Ketik aduan disini"required>
@@ -39,7 +40,7 @@
     <form action="/action_page.php">
         <label for="myfile">Tambahkan File : </label><br>
         <input type="file" id="myfile" name="myfile" multiple>
-        <button type="submit" class="btn">Kirim</button>
+        <button type="submit" id="kirim" class="btn">Kirim</button>
       </form>
     
 

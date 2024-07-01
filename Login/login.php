@@ -10,7 +10,7 @@
 <body>
 
     <div class="wrapper">
-        <a href="../Main/main.html"><i class='bx bx-left-arrow-alt'></i></a>
+        <a href="../Main/main.php"><i class='bx bx-left-arrow-alt'></i></a>
         
         <form action="check.php" method="post">
             <h1>Masuk</h1>

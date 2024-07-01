@@ -6,7 +6,7 @@
     <title>Website Utama</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="bg">
     <header>
         <nav>
             <div class="logo">

@@ -1,13 +1,22 @@
 <?php
 session_start();
 
-// Periksa apakah pengguna sudah login
-if (!isset($_SESSION['username'])) {
-    header('Location: ../login.html');
-    exit;
+// Data login admin
+$admin = "fathur";
+$password = "123";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $pass = $_POST['password'];
+
+    if ($username == $admin && $pass == $password) {
+        // Login berhasil
+        $_SESSION['username'] = $username;
+        header('Location: ../Dashboard/dashboard.php');
+        exit;
+    } else {
+        // Login gagal
+        echo "Username atau password salah!";
+    }
 }
-
-echo "Selamat datang, " . $_SESSION['username'] . "!";
 ?>
-
-<a href="logout.php">Logout</a>
